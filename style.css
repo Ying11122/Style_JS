@@ -1,0 +1,63 @@
+section{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px;
+    padding: 30px;
+    background-color: rgb(245, 247, 247);
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(173, 219, 204);
+    width: 260px;
+    height: 300px;
+}
+
+div{
+    display: flex;
+    
+}    
+
+p{
+    text-align: center;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+#mensajeSecreto{
+    color: rgb(173, 219, 204);
+}
+
+#mensajeSecreto.colorBlanco{
+    color: white;
+}
+
+#mensajeSecreto.size{
+    font-size: larger;
+}
+
+#pelota{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: brown;
+    position: relative;
+    animation: botes ease 1s infinite alternate;
+    animation-play-state: paused;
+}
+
+@keyframes botes{
+    from{
+        top: 0px;
+    }
+    to{
+        top: 100px
+    }
+}
